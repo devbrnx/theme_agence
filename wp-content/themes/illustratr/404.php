@@ -23,9 +23,9 @@ get_header(); ?>
 
 				<div class="page-content not-found-bloc">
 					<p><?php _e( 'Il semblerait qu\'aucun contenu ne soit disponible &agrave; cet endroit. <br> Visitez plutôt
-					la page d\'accueil en cliquant sur le bouton ci-dessous.', 'illustratr' ); ?></p>
+			 		la page d\'accueil en cliquant sur le bouton ci-dessous.', 'illustratr' ); ?></p>
                     <div class="btn-404">
-                        <a href="<?php echo get_home_url() ?>"><span>Page d'accueil</span></a>
+                        <a class="hvr-ripple-out" href="<?php echo get_home_url() ?>"><span>Page d'accueil</span></a>
                     </div>
 
 
@@ -34,5 +34,5 @@ get_header(); ?>
 
 		</main>
 	</div>
- 
+
 <?php get_footer(); ?>
