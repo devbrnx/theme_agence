@@ -3367,7 +3367,7 @@ TEST Client*/
         width: 100%;
     }
     .cut-slider{
-        margin-top: 88px;
+        margin-top: 65px;
     }
 
     .right-wrapper{
@@ -3375,6 +3375,7 @@ TEST Client*/
     }
     .contact-content-right{
         width: 50%;
+        margin-bottom: 50px;
     }
     .helper{
         width: 140px!important;
@@ -3442,8 +3443,10 @@ Digital
     .digital-subtext {
         width: 50% !important;
         margin-bottom: 20px;
-
     }
+    .post-228{
+    margin-bottom: 0px!important;
+}
 
 }
 @media  screen and (min-width: 768px) and  (max-width: 1219px){
