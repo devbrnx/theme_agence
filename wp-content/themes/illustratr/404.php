@@ -11,47 +11,28 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<section class="error-404 not-found">
+                            
 				<header class="page-header">
-					<h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'illustratr' ); ?></h1>
-				</header><!-- .page-header -->
+                    <?php $uri=$_SERVER['REQUEST_URI'];?>
+					<h1 class="page-title"><?php _e( 'La page <span class="false-url">"', 'illustratr' );
+                        echo preg_replace('/^\/|\/$/','',$uri);
+                        _e( '"</span> n\'existe pas...', 'illustratr' );
+                        ?>
+                    </h1>
+				</header>
 
-				<div class="page-content">
-					<p><?php _e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'illustratr' ); ?></p>
+				<div class="page-content not-found-bloc">
+					<p><?php _e( 'Il semblerait qu\'aucun contenu ne soit disponible &agrave; cet endroit. <br> Visitez plutôt
+					la page d\'accueil en cliquant sur le bouton ci-dessous.', 'illustratr' ); ?></p>
+                    <div class="btn-404">
+                        <a href="<?php echo get_home_url() ?>"><span>Page d'accueil</span></a>
+                    </div>
 
-					<?php get_search_form(); ?>
 
-					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
+				</div>
+			</section>
 
-					<?php if ( illustratr_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
-					<div class="widget widget_categories">
-						<h2 class="widgettitle"><?php _e( 'Most Used Categories', 'illustratr' ); ?></h2>
-						<ul>
-						<?php
-							wp_list_categories( array(
-								'orderby'    => 'count',
-								'order'      => 'DESC',
-								'show_count' => 1,
-								'title_li'   => '',
-								'number'     => 10,
-							) );
-						?>
-						</ul>
-					</div><!-- .widget -->
-					<?php endif; ?>
-
-					<?php
-					/* translators: %1$s: smiley */
-					$archive_content = '<p>' . sprintf( __( 'Try looking in the monthly archives. %1$s', 'illustratr' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
-					?>
-
-					<?php the_widget( 'WP_Widget_Tag_Cloud' ); ?>
-
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
+		</main>
+	</div>
+ 
 <?php get_footer(); ?>
