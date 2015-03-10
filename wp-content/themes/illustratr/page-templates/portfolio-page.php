@@ -77,7 +77,7 @@ get_header(); ?>
                             ?>
                         </ul>
 
-                        <span class="separator">.</span>
+                        <span class="separator">---</span>
                         <!--Get jetpack-tag taxonomy-->
                         <ul class="list-jetpack-taxonomies" data-filter-group="tags">
 

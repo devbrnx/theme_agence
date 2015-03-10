@@ -2264,7 +2264,7 @@
 .hvr-ripple-out:before {
   content: '';
   position: absolute;
-  border: #838383 solid 6px;
+  border: #838383 solid 1px;
   top: 0;
   right: 0;
   bottom: 0;

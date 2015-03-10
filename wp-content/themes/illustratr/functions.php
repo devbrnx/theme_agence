@@ -288,3 +288,5 @@ function my_jquery_enqueue() {
 //Enqueuing hover.css libs
 wp_enqueue_style( 'hover', get_template_directory_uri() . '/hover/hover.css', array(), '2.0.1' );
 
+//Soliloquy filter
+

@@ -27,8 +27,8 @@
         /*$('.filter[data-filter=".video"]').after("<br>");*/
 
     }
-
-
+    
+     
 	/*
 	 * Add classes to images and captions if image post format.
 	 */
@@ -178,6 +178,7 @@
 		calc();
 		sharedaddy();
         add_custom_class();
+        
 
 	}
 	$( window ).load( function() {

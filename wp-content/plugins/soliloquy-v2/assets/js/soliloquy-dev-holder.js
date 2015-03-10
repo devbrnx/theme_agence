@@ -710,6 +710,7 @@
 			e.preventDefault();
 		}
 
+
 		/**
 		 * Click prev binding
 		 *
