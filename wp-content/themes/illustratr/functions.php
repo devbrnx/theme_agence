@@ -297,4 +297,6 @@ function load_portfolio_script(){
 }
 add_action("wp_enqueue_scripts", "load_portfolio_script", 12);
 
+//Deactivate rich text edit in admin
+add_filter( 'user_can_richedit' , '__return_false', 50 );
 
