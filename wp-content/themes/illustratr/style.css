@@ -830,13 +830,15 @@ body {
 }
 
 @media screen and (min-width: 1920px) and (max-width: 2580px ) {
-    .site-header{width: 1180px !important;}
+    .site-header{width: 1280px !important;}
     .entry-content{width: 1280px;}
+    .post-55 .entry-content{width: 1180px;}
 }
 
 @media screen and (min-width: 1221px) and (max-width: 1920px ) {
     .site-header{width: 1100px !important;}
-    .entry-content{width: 1000px;}
+    .entry-content{width: 1100px;}
+    .post-55 .entry-content{width: 1000px;}
     .site-footer{margin-top: -23px !important;}
 }
 
