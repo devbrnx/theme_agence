@@ -288,5 +288,13 @@ function my_jquery_enqueue() {
 //Enqueuing hover.css libs
 wp_enqueue_style( 'hover', get_template_directory_uri() . '/hover/hover.css', array(), '2.0.1' );
 
-//Soliloquy filter
+//Registering unveil for only portfolio page
+function load_portfolio_script(){
+    if (is_page('porfolio')) {
+        wp_register_script('unveil',  get_template_directory_uri() . '/js/jquery.unveil.js', array( 'jquery' ));
+        wp_enqueue_script('unveil');
+    }
+}
+add_action("wp_enqueue_scripts", "load_portfolio_script", 12);
+
 

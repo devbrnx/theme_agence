@@ -28,6 +28,28 @@
 
     }
     
+    /**
+     * Special transformations for unveil
+     *
+     */
+    function prep_unveil() {
+        $(".attachment-illustratr-portfolio-featured-image").each(function() {
+            var el = $(this);
+            el.attr("data-src",el.attr("src"));
+            el.css({
+                'opacity':'0',
+                'transition':'opacity 1s fade-in',
+                'webkit-transition':'opacity 1s fade-in',
+                'moz-transition':'opacity 1s fade-in',
+                'ms-transition':'opacity 1s fade-in'
+
+            });
+           el.attr("src","data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==");
+            el.unveil(-200, function () {
+                    el.css('opacity','1');
+            });
+        });
+    }
      
 	/*
 	 * Add classes to images and captions if image post format.
@@ -178,6 +200,7 @@
 		calc();
 		sharedaddy();
         add_custom_class();
+        prep_unveil();
         
 
 	}
