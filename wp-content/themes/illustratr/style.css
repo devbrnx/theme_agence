@@ -2858,7 +2858,7 @@ Digital
         width: 597px;
     }
     .digital-desc{
-        margin-bottom: 175px!important;
+         margin-bottom: 185px!important;
     }
 }
 
@@ -2931,11 +2931,11 @@ Digital
     display: block;
 }
 .digital-desc{
-    line-height: 17px;
-    margin-bottom: 114px;
-    margin-left: 135px;
-    padding-top: 27px;
-    width: 265px;
+      line-height: 17px;
+     margin-bottom: 130px;
+  margin-left: 135px;
+  padding-top: 100px;
+  width: 265px;
 }
 .digital-title{
     font-size: 12px;
@@ -2953,7 +2953,8 @@ Digital
 
 .digital-subtext{
     float: left;
-    width: calc(100%/3);
+    width: calc(50%);
+    padding-bottom: 20px;
 }
 .slider-digital{
     border-bottom: 165px #f5f5f5;

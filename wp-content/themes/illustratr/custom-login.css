@@ -1,0 +1,55 @@
+/*--------------------------------------------------------------
+Wordpress Login page override
+--------------------------------------------------------------*/
+body {
+    background: #fff;
+  }
+
+.wp-core-ui .button-primary {
+    background: #151617;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    border: 1px solid #838383;
+    color: #fff;
+    text-decoration: none;
+    -webkit-box-shadow: none ;
+    box-shadow:none;
+}
+.wp-core-ui .button-primary:hover{
+    background: #838383;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    border: 1px solid #838383;
+    color: #fff;
+    text-decoration: none;
+    -webkit-box-shadow: none ;
+    box-shadow:none;
+}
+
+.login h1 a {
+    background-image: url("img/bronx-LOGO.png");
+    background-image: none,url("img/bronx-LOGO.png");
+    -webkit-background-size: 114px;
+    background-size: 180px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    color: #999;
+    height: 84px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.3em;
+    margin: 0 auto 25px;
+    padding: 0;
+    text-decoration: none;
+    width: 179px;
+    text-indent: -9999px;
+    outline: 0;
+    overflow: hidden;
+    display: block;
+}
+.login .message {
+    border-left: 4px solid #5D5D5D;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}

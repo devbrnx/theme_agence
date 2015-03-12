@@ -300,3 +300,8 @@ add_action("wp_enqueue_scripts", "load_portfolio_script", 12);
 //Deactivate rich text edit in admin
 add_filter( 'user_can_richedit' , '__return_false', 50 );
 
+//Custom styling for wordpress  login
+function custom_login() {
+    echo '<link rel="stylesheet" type="text/css" href="'.get_bloginfo('template_directory').'/custom-login.css" />';
+}
+add_action('login_head', 'custom_login');
