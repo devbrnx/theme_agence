@@ -29,7 +29,7 @@ if ( isset( $GLOBALS['content_width'] ) ) {
 
 	<footer class="entry-meta">
         <?php $link = get_permalink( '7' );?>
-        <span class="return-links"><a href="<?php echo $link?>">Retour</a></span>
+        <span class="return-links"><a href="<?php echo $link?>"><&nbsp;&nbsp;retour</a></span>
 		<?php
 /*
 			$tags_list = get_the_term_list( $post->ID, 'jetpack-portfolio-tag', '', __( ', ', 'illustratr' ) );
