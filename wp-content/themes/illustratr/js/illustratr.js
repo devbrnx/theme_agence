@@ -22,8 +22,8 @@
      *Add custom class for hovering effects on menu links
      */
     function add_custom_class(){
-        $('.main-navigation ul li a').addClass('hvr-underline-from-center');
-        $('.socio-wrap a div').addClass('hvr-pulse-grow');
+       /* $('.main-navigation ul li a').addClass('hvr-underline-from-center');
+        $('.socio-wrap a div').addClass('hvr-pulse-grow');*/
         /*$('.filter[data-filter=".video"]').after("<br>");*/
 
     }

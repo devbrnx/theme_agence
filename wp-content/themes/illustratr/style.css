@@ -265,21 +265,16 @@ a .socio-facebook,a .socio-bronx, a .socio-vimeo, a .socio-insta{
 }
 .socio-icons .socio-facebook, .socio-icons .socio-vimeo, .socio-icons .socio-bronx, .socio-icons .socio-insta{
     width: 22px;
-    height: 22px;
-}
+    height: 22px
 
-.socio-icons .socio-facebook {
-    background: url("img/facebook-icon.png") no-repeat;
 }
-.socio-icons .socio-vimeo{
-    background: url("img/vimeo-icon.png") no-repeat;
+.svg-fill{
+    fill : #cac9c9;
 }
-.socio-icons .socio-bronx{
-    background: url("img/bronx-icon.png") no-repeat;
-}
-.socio-icons .socio-insta{
-    background: url("img/instagram-icon.png") no-repeat;
-}
+/*.socio-icons .socio-facebook:hover, .socio-icons .socio-vimeo:hover, .socio-icons .socio-bronx:hover, .socio-icons .socio-insta:hover {
+    fill: #000000;
+}*/
+
 
 /*  Pagination */
 .site-main .comment-navigation,.site-main .paging-navigation,.site-main .post-navigation {
@@ -837,13 +832,13 @@ body {
 @media screen and (min-width: 1920px) and (max-width: 2580px ) {
     .site-header{width: 1280px !important;}
     .entry-content{width: 1280px;}
-    .post-55 .entry-content{width: 1180px;}
+    .post-55 .entry-content{width: 1280px;}
 }
 
 @media screen and (min-width: 1221px) and (max-width: 1920px ) {
     .site-header{width: 1100px !important;}
     .entry-content{width: 1100px;}
-    .post-55 .entry-content{width: 1000px;}
+    .post-55 .entry-content{width: 1100px;}
     .site-footer{margin-top: -23px !important;}
 }
 
@@ -889,9 +884,12 @@ body {
     line-height: 1.1;
     font-weight: normal;
     text-transform: uppercase;
+    background-image: url("img/logo_bronx.svg");
+    background-repeat: no-repeat;
+    background-position: 0% 65%;
 }
 .site-title::before{
-    content:url("img/bronx-LOGO.png");
+    content:url("img/bronx-LOGO1.png");
 
 }
 
@@ -1037,22 +1035,27 @@ Menu
 
 .main-navigation ul li a {
 
-    line-height: 24px;
+    line-height: 19px;
     letter-spacing: 3px;
     font-family: "Gotham-Medium", arial, sans-serif;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 11px;
     color: #24282d;
+    border-bottom: 1px solid transparent;
     text-decoration: none;
     -webkit-transition: all 250ms ease;
     -moz-transition: all 250ms ease;
     -o-transition: all 250ms ease;
     transition: all 250ms ease;
+    padding-bottom: 2px;
 }
 
 
 .main-navigation ul li a:hover, .main-navigation ul li a:focus, .main-navigation ul li a:active {
     color: #24282d;
+    transition: color 0.3s, border-bottom-color 0.3s;
+    border-bottom: solid 1px #000000;
+
 }
 
 .main-navigation ul li:first-child {
@@ -1077,8 +1080,11 @@ Menu
 
 .main-navigation ul .current_page_item > a,
 .main-navigation ul .current-menu-item > a {
+/*
     font-weight: bold;
-    padding-bottom: 3px !important;
+*/
+    padding-bottom: 2px !important;
+    border-bottom: solid 1px #000000;
 }
 
 
@@ -2119,10 +2125,10 @@ Portfolio
     -webkit-background-clip: content-box;
     -moz-background-clip: content-box;
     background-clip: content-box;
-    -webkit-transition: all 250ms ease;
-    -moz-transition: all 250ms ease;
-    -o-transition: all 250ms ease;
-    transition: all 250ms ease;
+    -webkit-transition: all 940ms ease;
+    -moz-transition: all 940ms ease;
+    -o-transition: all 940ms ease;
+    transition: all 940ms ease;
 }
 
 .portfolio-thumbnail a:after {
@@ -2134,10 +2140,13 @@ Portfolio
     z-index: 2;
     margin-top: -5px;
     margin-left: -5px;
-    height: 10px;
-    width: 10px;
-    background: transparent url(img/plus.svg) 0 0 no-repeat;
+    height: 20px;
+    width: 20px;
+    background: transparent url(img/star.svg) 0 0 no-repeat;
     opacity: 0;
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    transform: rotate(7deg);
     -webkit-transition: all 250ms ease;
     -moz-transition: all 250ms ease;
     -o-transition: all 250ms ease;
@@ -2145,7 +2154,7 @@ Portfolio
 }
 
 .portfolio-thumbnail a:hover:before, .portfolio-thumbnail a:focus:before, .portfolio-thumbnail a:active:before {
-    opacity: 0.75;
+    opacity: 0.90;
 }
 
 .portfolio-thumbnail a:hover:after, .portfolio-thumbnail a:focus:after, .portfolio-thumbnail a:active:after {
@@ -2865,6 +2874,9 @@ Digital
     .digital-desc{
         margin-bottom: 185px!important;
     }
+    .subtext-bloc:nth-child(3) {
+        margin-left: 363px;
+    }
 }
 
 @media screen and (min-width:1220px) and (max-width: 1920px){
@@ -2876,6 +2888,9 @@ Digital
 
     .digital-right-bloc{
         width: 497px;
+    }
+    .subtext-bloc:nth-child(3) {
+        margin-left: 314px;
     }
 
 }
@@ -2937,7 +2952,7 @@ Digital
 }
 .digital-desc{
     line-height: 17px;
-    margin-bottom: 130px;
+    margin-bottom: 134px;
     margin-left: 135px;
     padding-top: 100px;
     width: 265px;
@@ -2951,7 +2966,6 @@ Digital
 .digital-title h2{
     font-weight: normal!important;
     letter-spacing: 2px;
-    border-bottom: solid 1px #000000;
     width: 216px;
     margin-bottom: 40px;
 }
@@ -3042,8 +3056,13 @@ Inner portfolio page
 .return-links a{
     font-size: 12px;
     font-style: normal;
-    font-family: "Gotham-Book";
+    font-family: "Gotham-Medium";
     padding-left: 165px;
+    transition: color 900ms;
+    text-decoration: underline;
+}.return-links a:hover{
+    color: #000000;
+    transition: color 900ms ;
 }
 
 .slider-inner-folio{
@@ -3085,7 +3104,9 @@ Inner portfolio page
     /*background-color: rgba(0,0,0, .6 );*/
     background: rgba(0,0,0,0) url('images/arrow_left.png') no-repeat scroll 50% 50%;
 }
-
+.slider-inner-folio .soliloquy-container .soliloquy-prev:hover {
+    cursor: url('img/left-arrow-gray-hi.png'),auto;
+}
 .slider-inner-folio .soliloquy-container .soliloquy-next {
     display: block;
     width: 50%;
@@ -3097,6 +3118,9 @@ Inner portfolio page
     z-index: 1320;
     /*background-color: rgba(224, 75, 172, 0.60);*/
     background: rgba(0,0,0,0) url('images/arrow_left.png') no-repeat scroll 50% 50%;
+}
+.slider-inner-folio .soliloquy-container .soliloquy-next:hover {
+    cursor: url('img/right-arrow-gray-hi.png'),auto;
 }
 
 @media  screen and (min-width: 768px) and  (max-width: 1219px){

@@ -134,7 +134,7 @@
     margin-top: -16px;
     left: -55px;
     z-index: 1320;
-    background: rgba(0,0,0,0) url('images/arrow_left.png') no-repeat scroll 50% 50%;
+     background: rgba(0,0,0,0) url('images/precedent.png') no-repeat scroll 50% 50%;
 }
 
 .soliloquy-container .soliloquy-next {
@@ -146,7 +146,7 @@
     margin-top: -16px;
     right: -55px;
     z-index: 1320;
-    background: rgba(0,0,0,0) url('images/arrow_right.png') no-repeat scroll 50% 50%;
+     background: rgba(0,0,0,0) url('images/suivant.png') no-repeat scroll 50% 50%;
 }
 
 .soliloquy-container .soliloquy-prev.disabled,
