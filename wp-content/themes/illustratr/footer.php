@@ -34,19 +34,20 @@
                     <div class="socio-wrap">
                         <a  href="">
                             <!--<div class="socio-facebook"></div>-->
-                            <svg class="socio-facebook" viewBox="0 0 22 22">
+                            <svg class="socio-facebook svg" viewBox="0 0 22 22">
                                 <use class="socio-facebook" xlink:href="<?php echo get_site_url().'/wp-content/themes/illustratr/img/facebook.svg#facebook-icon' ?>"></use>
                             </svg>
+                             
                         </a>
                         <a href="">
                            <!-- <div class="socio-vimeo"></div>-->
-                            <svg  class="socio-vimeo" viewBox="0 0 22 22">
+                            <svg class="socio-vimeo svg" viewBox="0 0 22 22">
                                 <use xlink:href="<?php echo get_site_url().'/wp-content/themes/illustratr/img/vimeo.svg#socio-vimeo' ?>"></use>
                             </svg>
                         </a>
                         <a href="">
                             <!--<div class="socio-bronx"></div> -->
-                            <svg class="socio-bronx" viewBox="0 0 22 22">
+                            <svg class="socio-bronx svg" viewBox="0 0 22 22">
                                 <use xlink:href="<?php echo get_site_url().'/wp-content/themes/illustratr/img/etoile.svg#socio-bronx' ?>">
 
                                 </use>
@@ -55,7 +56,7 @@
                         </a>
                         <a  href="">
                             <!--<div class="socio-insta"></div> -->
-                            <svg class="socio-insta" viewBox="0 0 22 22">
+                            <svg class="socio-insta svg" viewBox="0 0 22 22">
                                 <use xlink:href="<?php echo get_site_url().'/wp-content/themes/illustratr/img/instagram.svg#socio-insta' ?>"></use>
                             </svg>
                         </a>

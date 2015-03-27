@@ -249,7 +249,8 @@ a:hover, a:focus, a:active { color: #7f8d8c;}
 /*Social Icons*/
 .socio-icons{
     margin: 0 auto;
-    height: 50px;
+    height: 25px;
+    width: 120px;
 }
 .socio-wrap{
     width: 120px;
@@ -266,14 +267,22 @@ a .socio-facebook,a .socio-bronx, a .socio-vimeo, a .socio-insta{
 .socio-icons .socio-facebook, .socio-icons .socio-vimeo, .socio-icons .socio-bronx, .socio-icons .socio-insta{
     width: 22px;
     height: 22px
+  
+}
+.socio-icons .svg{
+      fill : #000000;
+    transition : fill 500ms;
+}
+
+.socio-icons:hover .svg{
+    fill: #c9c9c9;
+    transition : fill 500ms;
+}
+.socio-icons .socio-facebook:hover, .socio-icons .socio-vimeo:hover, .socio-icons .socio-bronx:hover, .socio-icons .socio-insta:hover{
+    fill : #000000;
+    transition : fill 500ms;
 
 }
-.svg-fill{
-    fill : #cac9c9;
-}
-/*.socio-icons .socio-facebook:hover, .socio-icons .socio-vimeo:hover, .socio-icons .socio-bronx:hover, .socio-icons .socio-insta:hover {
-    fill: #000000;
-}*/
 
 
 /*  Pagination */
@@ -2875,7 +2884,12 @@ Digital
         margin-bottom: 185px!important;
     }
     .subtext-bloc:nth-child(3) {
-        margin-left: 363px;
+        margin-left: 274px;
+    }
+    .digital-subtext{
+        float: left;
+        width: calc(35%);
+        padding-bottom: 20px;
     }
 }
 
@@ -2890,7 +2904,12 @@ Digital
         width: 497px;
     }
     .subtext-bloc:nth-child(3) {
-        margin-left: 314px;
+        margin-left: 275px;
+    }
+    .digital-subtext{
+        float: left;
+        width: calc(42%);
+        padding-bottom: 20px;
     }
 
 }
@@ -2915,12 +2934,14 @@ Digital
         margin-left: 0 !important;
     }
     .digital-subtext {
+        float: left;
         width: 50% !important;
         margin-bottom: 20px;
     }
     .post-228{
         margin-bottom: 0px!important;
     }
+
 
 }
 @media  screen and (min-width: 768px) and  (max-width: 1219px){
@@ -2944,6 +2965,11 @@ Digital
     .digital-desc,.subtext-bloc{
         margin-left: 0 !important;
     }
+    .digital-subtext{
+        float: left;
+        width: calc(42%);
+        padding-bottom: 20px;
+    }
 
 }
 .digital-left-bloc, .digital-right-bloc{
@@ -2966,15 +2992,12 @@ Digital
 .digital-title h2{
     font-weight: normal!important;
     letter-spacing: 2px;
+
     width: 216px;
     margin-bottom: 40px;
 }
 
-.digital-subtext{
-    float: left;
-    width: calc(50%);
-    padding-bottom: 20px;
-}
+
 .slider-digital{
     border-bottom: 165px #f5f5f5;
 
@@ -3145,3 +3168,5 @@ Inner portfolio page
         padding: 0;
     }
 }
+/*Isotope Filtering effect*/
+ 
